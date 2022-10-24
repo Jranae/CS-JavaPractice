@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 public class ArrayList1 {
 
 	public static void main(String[] args) {
@@ -20,6 +21,15 @@ public class ArrayList1 {
 		animals.remove(0);
 		for (String i: animals)
 		System.out.println(i);
+		
+		//Get the iterator
+		Iterator<String>it = animals.iterator();
+		//Print the first item
+		System.out.println(it.next());
+		//Looping through and print all the elements
+		while(it.hasNext()) {
+		System.out.println(it.next());
+		}
 	}
 
 }
